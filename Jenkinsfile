@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh 'javac Sample.java'
+                sh 'javac Simple.java'
             }
         }
         stage('Run Application'){
             steps{
-               sh 'java Sample'
+               sh 'java Simple'
             }  
         }
     }
